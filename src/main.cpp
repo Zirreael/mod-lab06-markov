@@ -1,6 +1,7 @@
-#include "textgen.h"
+// Copyright 2023 Zirraeal VisualStudio
 #include <iostream>
 #include <fstream>
+#include "textgen.h"
 
 int main() {
 	const int NPREF = 2;
