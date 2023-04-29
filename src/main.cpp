@@ -1,4 +1,4 @@
-#include "markov.h"
+#include "textgen.h"
 #include <iostream>
 #include <fstream>
 
@@ -13,19 +13,10 @@ int main() {
 		while (getline(fs, line)) {
 			text += line;
 		}
-	}
-	else {
+	} else {
 		std::cout << "file dont open";
 	}
 	fs.close();
-	//std::cout << text + "\n";
-	std::string text1 = "one fish two fish red fish blue fish";
-	Markov gen = Markov(text1, NPREF);
-	std::cout << gen.Generator(1000);
-	prefix pref = prefix();
-	pref.push_back("one");
-	pref.push_back("fish");
-	std::string s = gen.statetab[pref][0];
-	std::cout << "\n";
-	std::cout << s;
+	Markov gen = Markov(text, NPREF);
+	std::cout << gen.Generator(MAXGEN);
 }
