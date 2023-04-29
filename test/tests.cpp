@@ -42,9 +42,9 @@ TEST(TestCaseName4, Test4) {
   suf.push_back("two");
   suf.push_back("red");
   suf.push_back("blue");
-  EXPECT_EQ(geb.statetab[pref][0], suf[0]);
-  EXPECT_EQ(geb.statetab[pref][1], suf[1]);
-  EXPECT_EQ(geb.statetab[pref][2], suf[2]);
+  EXPECT_EQ(gen.statetab[pref][0], suf[0]);
+  EXPECT_EQ(gen.statetab[pref][1], suf[1]);
+  EXPECT_EQ(gen.statetab[pref][2], suf[2]);
 }
 
 TEST(TestCaseName5, Test5) {
