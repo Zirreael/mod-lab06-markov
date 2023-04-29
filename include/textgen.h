@@ -11,7 +11,7 @@ typedef std::deque<std::string> prefix;
 typedef std::vector<std::string> suffix;
 
 class Markov {
-  public:
+    public:
     std::map<prefix, suffix> statetab;
     explicit Markov(std::string text, int nPref);
     explicit Markov(std::map<prefix, suffix> table);
