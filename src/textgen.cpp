@@ -1,3 +1,4 @@
+// Copyright 2023 Zirraeal VisualStudio
 #include <iostream>
 #include "textgen.h"
 
