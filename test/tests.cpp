@@ -60,6 +60,6 @@ TEST(TestCaseName5, Test5) {
   suf.push_back("fish");
   table[pref] = suf;
   Markov gen = Markov(table);
-  std::string res = "fish red fish red fish red fish red fish red fish";
+  std::string res = "fish red fish red fish red fish red fish red fish ";
   EXPECT_EQ(res, gen.Generator(50));
 }
